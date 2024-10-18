@@ -1,0 +1,142 @@
+# Query: accent
+# Flags: RegExp
+# ContextLines: 1
+
+37 results - 16 files
+
+tailwind.config.js:
+  24          primary: "#1c1c22",
+  25:         accent: {
+  26            DEFAULT: "#00ff99",
+
+app\page.jsx:
+  15          <h3 className="h3 mb-6">
+  16:           Hello I'm <br/> <span className="text-blue-300"> Knowledge Matambura</span>
+  17          </h3>
+
+  21          {/* btn and socials */}
+  22:         <div className="flex flex-col text-blue-300 xl:flex-row items-center gap-8">
+  23            <a 
+
+  32            <div className="mb-8 xl:mb-0">
+  33:            <Social containerStyles="flex gap-6 " iconStyles="w-9 h-9 border border-blue-300 rounded-full flex justify-center items-center text-accent text-base hover:bg-accent hover:text-primary hover:transition-all duration-500"/>
+  34            </div>
+
+app\contact\page.jsx:
+  44              className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl" >
+  45:               <h3 className="text-3xl text-blue-300">Lets Work Together</h3>
+  46              <p className="text-white/60"> 
+
+  71                      <li key={index} className="flex items-center gap-6">
+  72:                       <div className="w-[32px] h-[32px] xl:w-[52px] xl:h-[52px] bg-[#27272c] text-blue-300 rounded-md flex items-center justify-center">
+  73                          <div className="text-[19px]">{item.icon}</div>
+
+app\resume\page.jsx:
+  173                        <li key={index} className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1 text-white/60">
+  174:                         <span className="text-accent">{items.duration}</span>
+  175                          <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{ items.position}</h3>
+  176                          <div className="flex items-center gap-3">
+  177:                         <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
+  178                          <p className="text-white/20">{items.company}</p>
+
+  195                        <li key={index} className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1 text-white/60">
+  196:                         <span className="text-accent">{items.duration}</span>
+  197                          <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left" >{ items.degree}</h3>
+  198                          <div className="flex items-center gap-3">
+  199:                           <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
+  200                          <p className="text-white/20">{items.institution}</p>
+
+  222                        <TooltipTrigger className="w-full h-[80px] bg-[#232329] rounded-xl flex justify-center items-center group">
+  223:                         <div className="text-4xl group-hover:text-accent transition-all duration-300 text-white"> {skill.icon}</div>
+  224                        </TooltipTrigger>
+
+app\services\page.jsx:
+  62                  <Link href={service.href}
+  63:                 className="w-[70px] h-[70px] rounded-full bg-black group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-45">
+  64                    <BsArrowDownRight className="text-white text-3xl"/>
+
+  67                  </div>
+  68:                 <h2 className="text-[26px] font-bold leading-none group-hover: text-accent transition-all duration-500 text-black">
+  69                    {service.title}
+
+app\work\page.jsx:
+  65              <div className="text-5xl leading-none font-extrabold text-transparent text-outline">{project.num}</div>
+  66:             <h2 className="text-[32px] font-bold leading-none text-black/60 group-hover:text-accent transition-all duration-500 capitalize">{project.catergory} project</h2>
+  67            <p className="text-black/60" > { project.description}</p>
+
+  69              {project.stack.map((item, index)=>{
+  70:               return <li key={index} className="text-xl text-accent"> 
+  71                {item.name}
+
+  81                  <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-black/25 flex justify-center items-center group">
+  82:                   <BsArrowUpRight className="text-black text-3xl group-hover:text-accent"/>
+  83                  </TooltipTrigger>
+
+  93                  <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-black/25 flex justify-center items-center group">
+  94:                   <BsGithub className="text-black text-3xl group-hover:text-accent"/>
+  95                  </TooltipTrigger>
+
+components\Header.jsx:
+  11          <h1 className="text-3xl font-semibold">
+  12:             Knowledge<span className="text-accent">.</span>
+  13          </h1>
+
+components\MobileNav.jsx:
+  35          <SheetTrigger className="flex justify-center items-center">
+  36:             <CiMenuFries className="text-[32px] text-accent"/>
+  37          </SheetTrigger>
+
+  41                  <h1 className="text-3xl font-semibold ">
+  42:                     Knowledge<span className=" text-accent">.</span></h1>
+  43                  </Link>
+
+  47                  return(
+  48:                     <Link href={link.path} key={index} className={`${link.path === pathname && " text-accent border-b-2 border-accent"} capitalize font-medium hover:text-accent transition-all`}>
+  49                          {link.name}
+
+components\Nav.jsx:
+  34                  return(
+  35:                     <Link href={link.path} key={index} className={`${link.path === pathname && " text-accent border-b-2 border-accent"} capitalize font-medium hover:text-accent transition-all`}>
+  36                          {link.name}
+
+components\WorkSliderBtns.jsx:
+   9      <div className="border-gray-200 px-2 py-1 rounded-xl mt-4 flex gap-2 absolute bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none">
+  10:         <button className="bg-accent p-1 rounded-md"
+  11          onClick={()=>swiper.slidePrev()}> Prev
+  12           </button>
+  13:          <button className="bg-accent p-1 rounded-md"
+  14          onClick={()=> swiper.slideNext()}> Next
+
+components\ui\button.jsx:
+  11        variant: {
+  12:         default: "bg-accent text-slate-50 hover:bg-slate-900/90 dark:bg-slate-50 dark:text-slate-900 dark:hover:bg-slate-50/90",
+  13          
+
+components\ui\input.jsx:
+   9        className={cn(
+  10:         "flex h-[48px] rounded-md border border-black/10 bg-primary px-4 py-5 placeholder:text-text-white/60 outline-none focus:border-accent",
+  11          className
+
+components\ui\select.jsx:
+  18      className={cn(
+  19:       "flex h-[48px] w-full items-center justify-between rounded-md border border-white/10 bg-primary px-3 py-4 text-base text-white/60 placeholder:text-whie/10 outline-none focus:border-accent",
+  20        className
+
+  87      className={cn(
+  88:       "relative flex w-full cursor-default select-none items-center rounded-sm py-1.5 pl-8 pr-2 text-sm outline-none focus:bg-accent focus:text-primary data-[disabled]:pointer-events-none data-[disabled]:opacity-50 dark:focus:bg-slate-800 dark:focus:text-slate-50",
+  89        className
+
+components\ui\sheet.jsx:
+  54          className="absolute right-8 top-8 transition-opacity outline-none">
+  55:         <IoMdClose className="text-3xl twxt-accent" />
+  56          <span className="sr-only">Close</span>
+
+components\ui\tabs.jsx:
+  24      className={cn(
+  25:       "inline-flex items-center w-full bg-[#232329] justify-center whitespace-nowrap text-white rounded-lg p-3 text-balance font-medium ring-offset-white transition-all disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-accent data-[state=active]:text-white data-[state=active]:font-bold data-[state=active]:shadow-sm",
+  26        className
+
+components\ui\textarea.jsx:
+  8        className={cn(
+  9:         "flex min-h-[80px] w-full rounded-md border border-white/10 bg-primary px-3 py-5 text-base placeholder:text-white/60 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-accent focus-visible:ring-offset-0 disabled:cursor-not-allowed disabled:opacity-50 ",
+  10          className

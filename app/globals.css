@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+  
+.jetbrainsMono {
+    font-family: var(--font-jetbrainsMono);
+}
+.h1{
+    @apply text-[38px] xl:text-[80px] leading-[1.1] font-semibold;
+    font-family: var(--font-jetbrainsMono);
+}
+.h2{
+    @apply text-[32px] xl:text-[50px] leading-[1.1] font-semibold;
+    font-family: var(--font-jetbrainsMono);
+}
+.h3{
+    @apply text-[22px] xl:text-[23px] leading-[1.1] font-semibold;
+    font-family: var(--font-jetbrainsMono);
+}
+.text-outline{
+    -webkit-text-stroke: 1px #aaaaaa;
+}
+.text-outline-hover{
+    -webkit-text-stroke: 1px #00ff99;
+}
